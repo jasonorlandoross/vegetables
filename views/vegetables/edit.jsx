@@ -1,22 +1,20 @@
 const React = require('react')
+const Default = require('../layouts/Default.jsx')
 
 class Edit extends React.Component {
-    render(){
-        const {name, _id, color, cooked} = this.props.vegetable
-        return (
-            <>
-            <h1>Create A New Vegetable</h1>
-            <nav>
-                <a href="/vegetables"> Go Back To Vegetables Home Page</a>
-            </nav>
-            <form method="POST" action="/vegetable">
-                Name: <input type="type" name="name" placeholder="Name of Vegetable Here"></input><br/>
-                Color: <input type="text" name="color" placeholder="Color of Vegetable Here"></input><br/>
-                Is Cooked: <input type="checkbox" name="cooked"></input><br/>
-                <input type="submit" value="Edit Vegetable"></input>               
-                </form>            
-                </>
-        )
-    }
+  render () {
+    const { name } = this.props.vegetable
+    return (
+      <Default title={`${name} Edit Page`} fruit={this.props.vegetable}>
+
+        <form method='POST' action='/vegetable'>
+          Name: <input type='type' name='name' placeholder='Name of Vegetable Here' /><br />
+          Color: <input type='text' name='color' placeholder='Color of Vegetable Here' /><br />
+          Is Cooked: <input type='checkbox' name='cooked' /><br />
+          <input type='submit' value='Edit Vegetable' />
+        </form>
+      </Default>
+    )
+  }
 }
 module.exports = Edit
