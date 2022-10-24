@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa%7CRighteous');
 
 body {
-  background: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpg);
+  background: url(https://foodrevolution.org/wp-content/uploads/iStock-1179964671.jpg);
   margin: 0;
   font-family: 'Comfortaa', cursive;
 }
 
 h1 {
   font-family: 'Righteous', cursive;
-  background: rgb(239, 168, 75);
+  background: rgb(239, 237, 233);
   margin:0;
   margin-bottom: .5em;
   padding: 1em;
@@ -16,11 +16,11 @@ h1 {
 }
 
 a {
-  color: orange;
+  color: rgb(136, 200, 57);
   text-decoration: none;
-  text-shadow: 1px 1px 1px rgb(182, 194, 72);
+  text-shadow: 1px 1px 1px rgb(219, 233, 98);
   font-size: 1.5em;
-  background: rgba(130, 213, 113, 0.9);
+  background: rgba(51, 79, 45, 0.9);
 }
 
 a:hover {
